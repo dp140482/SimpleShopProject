@@ -37,14 +37,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 768px;
+    max-width: 718px;
     font-size: 14px;
+    height: 112px;
 }
 
 .filter-n-sort__filter {
-    margin: 51px 0;
+    margin-left: 15px;
     font-weight: 600;
     color: black;
+}
+
+.filter-img {
+    margin-left: 10px;
 }
 
 .filter-n-sort__sort {
@@ -54,11 +59,71 @@
     color: #6F6E6E;
 }
 
+.featured-items {
+    margin-top: 16px;
+}
+
+.sort-details-arrow {
+    margin-left: 11px;
+}
+
 .sort-btn {
-    margin-right: 28px;
+    margin-right: 26px;
 }
 
 .downbtn {
     width: 10px;
     height: 5px;
+}
+
+.card-block {
+    margin-bottom: 31px;
+}
+
+.card-text {
+    margin-bottom: 21px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 18px 0 95.5px;
+}
+
+.pagination-btns {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    padding: 0 16px;
+    height: 43px;
+}
+
+.left-arrow {
+    width: 8px;
+    height: 14px;
+}
+
+.right-arrow {
+    width: 8px;
+    height: 14px;
+    transform: rotate(180deg);
+}
+
+.page {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 12px;
+    color: darkgray;
+}
+
+.active-page {
+    color: #EF5B70;
+}
+
+.pagination-link {
+    text-decoration: none;
+    color: inherit;
 }

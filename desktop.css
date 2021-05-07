@@ -62,23 +62,20 @@
     }
     .prop {
         margin-top: 60px;
-        margin-bottom: 90px;
+        margin-bottom: 97px;
         padding: 0;
-    }
-    .prop__item_longcard {
-        margin: 28px 8px 8px;
     }
     .featured-items-header {
         margin-bottom: 28px;
     }
     .featured-items {
-        margin-top: 28px;
+        margin-top: 52px;
+        justify-content: space-between;
     }
     .featured-items__card {
         margin-top: 23px;
     }
     .browse-button {
-        margin-top: 17px;
         margin-bottom: 93px;
     }
     .upfooter {
@@ -100,5 +97,12 @@
     }
     .downfooter {
         padding: 0;
+    }
+    .prop__item {
+        width: 31.5%;
+        margin: 10px 0 -10px;
+    }
+    .prop__item_longcard {
+        margin: 40px 0 0;
     }
 }
