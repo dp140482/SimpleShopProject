@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="catalog.css">
     <!-- Для вёрстки по картинке: вставить в конец head 
     <link rel="stylesheet" href="test/test.css"> -->
+
+    <svg width="15" height="10" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="filter-icon" viewBox="0 0 15 10">
+            <title>filter-icon</title>
+            <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+        </symbol>
+    </svg>
+
 </head>
 
 <body>
@@ -47,21 +55,74 @@
 
     <section class="growstopper">
         <nav class="filter-n-sort">
-            <div class="filter-n-sort__filter">
-                FILTER
-                <img src="img/filter-icon.svg" alt="filter" class="filter-img">
-            </div>
-            <div class="filter-n-sort__sort">
-                <div class="sort-btn">TRENDING NOW
+            <ul class="filter-n-sort__filter">
+                <li class="filter-inner">
+                    <a href="#" class="filter-head">
+                        FILTER
+                        <svg class="filter-icon">
+                            <use xlink:href="#filter-icon" />
+                        </svg>
+                    </a>
+                    <ul class="filter-menu-list">
+                        <li class="filter-menu-head"><a href="#" class="filter-head">
+                            FILTER
+                            <svg class="filter-icon">
+                                <use xlink:href="#filter-icon" />
+                            </svg>
+                        </a></li>
+                        <li class="filter-menu-elem">
+                            <h3 class="filter-menu-elem-header">category</h3>
+                            <ul class="category-menu">
+                                <li class="category-menu-elem">Accessories</li>
+                                <li class="category-menu-elem">Bags</li>
+                                <li class="category-menu-elem">Denim</li>
+                                <li class="category-menu-elem">Hoodies & Sweatshirts</li>
+                                <li class="category-menu-elem">Jackets & Coats</li>
+                                <li class="category-menu-elem">Polos</li>
+                                <li class="category-menu-elem">Shirts</li>
+                                <li class="category-menu-elem">Shoes</li>
+                                <li class="category-menu-elem">Sweaters & Knits</li>
+                                <li class="category-menu-elem">T-Shirts</li>
+                                <li class="category-menu-elem">Tanks</li>
+                            </ul>
+                        </li>
+                        <li class="filter-menu-elem">
+                            <h3 class="filter-menu-elem-header">brand</h3>
+                        </li>
+                        <li class="filter-menu-elem">
+                            <h3 class="filter-menu-elem-header">designer</h3>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter-n-sort__sort">
+                <li class="sort-btn">TRENDING NOW
                     <img src="img/down-arrow-icon.svg" alt="down-arrow" class="sort-details-arrow">
-                </div>
-                <div class="sort-btn">SIZE
+                </li>
+                <li class="sort-btn">
+                    <div>
+                        SIZE
+                        <img src="img/down-arrow-icon.svg" alt="down-arrow" class="sort-details-arrow">
+                    </div>
+                    <ul class="size-menu">
+                        <li class="size-menu-elem">
+                            <input id="xs" type="checkbox" class="checkbox"><label for="xs" class="check-label">XS</label>
+                        </li>
+                        <li class="size-menu-elem">
+                            <input id="s" type="checkbox" class="checkbox"><label for="s" class="check-label">S</label>
+                        </li>
+                        <li class="size-menu-elem">
+                            <input id="m" type="checkbox" class="checkbox"><label for="m" class="check-label">M</label>
+                        </li>
+                        <li class="size-menu-elem">
+                            <input id="L" type="checkbox" class="checkbox"><label for="L" class="check-label">L</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sort-btn">PRICE
                     <img src="img/down-arrow-icon.svg" alt="down-arrow" class="sort-details-arrow">
-                </div>
-                <div class="sort-btn">PRICE
-                    <img src="img/down-arrow-icon.svg" alt="down-arrow" class="sort-details-arrow">
-                </div>
-            </div>
+                </li>
+            </ul>
         </nav>
     </section>
 
@@ -341,7 +402,7 @@
     </footer>
 
     <!-- Для вёрстки по картинке: вставить в конец body 
-    <img src="test/catalog_1140.png" alt="" class="test-img"> -->
+    <img src="test/catalog_hover_1140.png" alt="" class="test-img"> -->
 </body>
 
 </html>
