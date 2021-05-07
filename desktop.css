@@ -105,4 +105,40 @@
     .prop__item_longcard {
         margin: 40px 0 0;
     }
+    .menu-block {
+        position: relative;
+    }
+    .menu {
+        font-size: 14px;
+        line-height: 17px;
+        display: none;
+        z-index: 1;
+    }
+    .menu-block:hover .menu {
+        display: block;
+        background: white;
+        position: absolute;
+        width: 232px;
+        height: 764px;
+        padding: 33px;
+    }
+    .submenu {
+        padding: 22px;
+    }
+    .menu-main-header {
+        text-transform: uppercase;
+        padding: 12px 0;
+    }
+    .menu-header {
+        text-transform: uppercase;
+        color: #F16D7F;
+        margin: 12px 0;
+    }
+    .menu-elem {
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #6f6e6e;
+        display: block;
+        margin-top: 11px;
+    }
 }
