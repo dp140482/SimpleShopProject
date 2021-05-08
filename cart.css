@@ -1,8 +1,23 @@
-/* Vars */
-/* Body */
+.breadcrumb-bkg {
+  background: #F8F3F4;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.breadcrumb-leftpart {
+  margin: 60px 0;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
 .shopping-content {
   display: flex;
-  margin-top: 96px;
+  margin-top: 93px;
 }
 
 .countblock {
@@ -26,11 +41,17 @@
 .shopping-buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 90px;
+  margin-top: 68px;
+}
+
+.address-form-button {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0 57.5px;
 }
 
 .cardbox {
-  margin-bottom: 144px;
+  margin-bottom: 124px;
 }
 
 .card-pic {
@@ -44,13 +65,13 @@
 
 .card-close {
   background: #FFFFFF;
-  padding: 22px 28px 22px 24px;
+  padding: 26px 23px 22px 75px;
 }
 
 .card-header {
   font-size: 24px;
   line-height: 29px;
-  margin-bottom: 36px;
+  margin-bottom: 41px;
   color: #222222;
 }
 
@@ -79,13 +100,19 @@
   text-decoration: none;
   border: 1px solid #A4A4A4;
   color: #000000;
+  background: #FFFFFF;
   font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
   padding: 17px 40px;
 }
 
 .quote-btn {
   padding: 11px 15px;
   color: #4A4A4A;
+  font-size: 11px;
+  line-height: 13px;
+  cursor: pointer;
 }
 
 .address-form-header {
@@ -93,12 +120,12 @@
   font-size: 16px;
   line-height: 19px;
   color: #222222;
-  margin: 20px 0;
+  margin: 16px 0 10.5px;
 }
 
 .address-input, .address-country {
-  margin: 10.5px 0;
-  padding: 13px 17px 16px;
+  margin: 10px 0;
+  padding: 13px 17px 15px;
   font-size: 13px;
   line-height: 16px;
   color: #222222;
@@ -109,4 +136,60 @@
 .address-country {
   font-weight: 300;
   color: #B1B1B1;
+}
+
+.calculator {
+  padding: 39px 43px 42px 44px;
+  background: #F5F3F3;
+}
+
+.subtotal {
+  color: #4A4A4A;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: right;
+  margin-right: -8px;
+}
+
+.total {
+  color: #222222;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  margin: 12px -5px 21px 0;
+}
+
+.sum {
+  margin-left: 22px;
+}
+
+.grandsum {
+  color: #F16D7F;
+  margin-left: 21px;
+}
+
+.upon-button {
+  border-top: 1px solid #E2E2E2;
+  padding-top: 17px;
+}
+
+.main-btn {
+  display: block;
+  padding: 15px 42px 16px 41px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #F16D7F;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.main-btn:hover {
+  color: #F16D7F;
+  background: #FFFFFF;
+}
+
+.card-close-img:hover {
+  transform: scale(1.4);
 }

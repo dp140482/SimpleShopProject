@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="phone.css">
     <link rel="stylesheet" href="tablet.css">
     <link rel="stylesheet" href="desktop.css">
-    <link rel="stylesheet" href="catalog.css">
     <link rel="stylesheet" href="cart.css">
-    <!-- Оптимизировать! -->
 </head>
 
 <body>
@@ -83,11 +81,11 @@
                             <p class="card-header">MANGO PEOPLE T-SHIRT</p>
                             <p class="card-data">
                                 Price: <span class="price-span">$300</span><br> Color: <span class="color-span">Red</span><br> Size: <span class="size-span">Xl</span><br> Quantity:
-                                <input type="text" class="product-count" id="product1-count" value="2">
+                                <input type="text" class="product-count" id="product1-count" value="2" pattern="[0-9]*">
                             </p>
                         </div>
                         <div class="card-close">
-                            <a href="#"><img src="img/close-btn-face.svg" alt="close"></a>
+                            <a href="#"><img src="img/close-btn-face.svg" alt="close" class="card-close-img"></a>
                         </div>
                     </div>
                     <div class="shopping-card">
@@ -100,7 +98,7 @@
                             </p>
                         </div>
                         <div class="card-close">
-                            <a href="#"><img src="img/close-btn-face.svg" alt="close"></a>
+                            <a href="#"><img src="img/close-btn-face.svg" alt="close" class="card-close-img"></a>
                         </div>
                     </div>
                     <div class="shopping-buttons">
@@ -109,17 +107,21 @@
                     </div>
                 </div>
                 <div class="countblock">
-                    <div class="address-form">
+                    <form action="#" class="address-form">
                         <h2 class="address-form-header">SHIPPING ADRESS</h2>
-                        <input type="text" class="address-input address-country" id="address-form-country" placeholder="Bangladesh">
-                        <input type="text" class="address-input" id="address-form-state" placeholder="State">
-                        <input type="number" class="address-input" id="address-form-postcode" placeholder="Postcode / Zip">
-                        <a href="#" class="quote-btn">GET A QUOTE</a>
-                    </div>
+                        <input type="text" class="address-input address-country" id="address-form-country" placeholder="Bangladesh" pattern="\S+[A-Za-z]" title="Type correct country name">
+                        <input type="text" class="address-input" id="address-form-state" placeholder="State" pattern="\S+[A-Za-z]" title="Type correct state/region name">
+                        <input type="text" class="address-input" id="address-form-postcode" placeholder="Postcode / Zip" pattern="[0-9]*" title="Type postcode or zip">
+                        <div class="address-form-button">
+                            <input type="submit" value="GET A QUOTE" class="quote-btn">
+                        </div>
+                    </form>
                     <div class="calculator">
                         <p class="subtotal">SUB TOTAL <span class="sum" id="sub-total">$900</span></p>
                         <p class="total">GRAND TOTAL <span class="grandsum" id="grand-total">$900</span></p>
-                        <a href="#" class="main-btn">PROCEED TO CHECKOUT</a>
+                        <div class="upon-button">
+                            <a href="#" class="main-btn">PROCEED TO CHECKOUT</a>
+                        </div>
                     </div>
                 </div>
             </div>
