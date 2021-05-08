@@ -1,21 +1,112 @@
+/* Vars */
+/* Body */
 .shopping-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: 96px;
+}
 
 .countblock {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  flex-direction: column;
+  margin-left: 128px;
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+}
 
 .shopping-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .shopping-card .card-pic {
-    width: 262px;
-    height: 306px; }
+  display: flex;
+  margin-bottom: 40px;
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  max-width: 652px;
+}
+
+.shopping-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.cardbox {
+  margin-bottom: 144px;
+}
+
+.card-pic {
+  width: 262px;
+}
+
+.text-box {
+  padding: 22px 31px;
+  background: #FFFFFF;
+}
+
+.card-close {
+  background: #FFFFFF;
+  padding: 22px 28px 22px 24px;
+}
+
+.card-header {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 36px;
+  color: #222222;
+}
+
+.card-data {
+  font-size: 22px;
+  line-height: 32px;
+  color: #575757;
+}
+.card-data .price-span {
+  color: #F16D7F;
+}
+
+.product-count {
+  margin-left: 24px;
+  width: 44px;
+  border: 1px solid #EAEAEA;
+  color: #656565;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.shopping-btn, .quote-btn {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #A4A4A4;
+  color: #000000;
+  font-weight: 300;
+  padding: 17px 40px;
+}
+
+.quote-btn {
+  padding: 11px 15px;
+  color: #4A4A4A;
+}
+
+.address-form-header {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin: 20px 0;
+}
+
+.address-input, .address-country {
+  margin: 10.5px 0;
+  padding: 13px 17px 16px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  border: 1px solid #A4A4A4;
+  width: 360px;
+}
+
+.address-country {
+  font-weight: 300;
+  color: #B1B1B1;
+}

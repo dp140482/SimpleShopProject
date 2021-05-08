@@ -1,12 +1,109 @@
+/* Vars */
+
+$red: #F16D7F
+$black: #000000
+$white: #FFFFFF
+$header-color: #222222
+$text-color: #575757
+$quote-btn-color: #4A4A4A
+$elem-light-bd-color: #EAEAEA
+$elem-bd-color: #A4A4A4
+$dark-placeholder-color: #656565
+$light-placeholder-color: #B1B1B1
+
+/* Body */
+
 .shopping-content
     display: flex
+    margin-top: 96px
 
 .countblock
+    display: flex
+    flex-direction: column
+    margin-left: 128px
+
+.address-form
     display: flex
     flex-direction: column
 
 .shopping-card
     display: flex
-    .card-pic
-        width: 262px
-        height: 306px
+    margin-bottom: 40px
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+    max-width: 652px
+
+.shopping-buttons
+    display: flex
+    justify-content: space-between
+    margin-top: 90px
+
+.cardbox
+    margin-bottom: 144px
+
+.card-pic
+    width: 262px
+
+.text-box
+    padding: 22px 31px
+    background: $white
+
+.card-close
+    background: $white
+    padding: 22px 28px 22px 24px
+
+.card-header
+    font-size: 24px
+    line-height: 29px
+    margin-bottom: 36px
+    color: $header-color
+
+.card-data
+    font-size: 22px
+    line-height: 32px
+    color: $text-color
+    .price-span
+        color: $red
+
+.product-count
+    margin-left: 24px
+    width: 44px
+    border: 1px solid $elem-light-bd-color
+    color: $dark-placeholder-color
+    font-size: 18px
+    line-height: 22px
+    font-weight: 400
+    text-align: center
+
+.shopping-btn
+    display: block
+    text-decoration: none
+    border: 1px solid $elem-bd-color
+    color: $black
+    font-weight: 300
+    padding: 17px 40px
+
+.quote-btn
+    @extend .shopping-btn
+    padding: 11px 15px
+    color: $quote-btn-color
+
+.address-form-header
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: $header-color
+    margin: 20px 0
+
+.address-input
+    margin: 10.5px 0
+    padding: 13px 17px 16px
+    font-size: 13px
+    line-height: 16px
+    color: $header-color
+    border: 1px solid $elem-bd-color
+    width: 360px
+
+.address-country
+    @extend .address-input
+    font-weight: 300
+    color: $light-placeholder-color
