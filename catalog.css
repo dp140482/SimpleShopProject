@@ -86,12 +86,13 @@
     fill: #EF5B70;
 }
 
-.filter-menu-elem-header {
+.filter-menu-elem-summary {
     padding: 11px;
     margin: 14px 0;
     font-size: 14px;
     border-bottom: 1px solid #ebebeb;
     border-left: 5px solid #EF5B70;
+    display: block;
 }
 
 .filter-n-sort__filter:hover .filter-menu-list {
@@ -187,6 +188,11 @@
 
 .category-menu-elem {
     margin: 11px 0;
+}
+
+.category-menu-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .filter-menu-elem:hover .category-menu {
