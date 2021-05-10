@@ -106,6 +106,10 @@
   line-height: 17px;
   padding: 17px 40px;
 }
+.shopping-btn:hover, .quote-btn:hover {
+  color: #FFFFFF;
+  background: #A4A4A4;
+}
 
 .quote-btn {
   padding: 11px 15px;
