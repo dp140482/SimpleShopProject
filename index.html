@@ -45,7 +45,7 @@
                     </a>
                 </div>
             </div>
-            <nav class="menu" id="mainMenu">
+            <nav class="menu-off" id="mainMenu">
                 <div class="close-btn-container">
                     <img src="img/close-btn-face.svg" alt="Close menu" class="close-btn" onclick="closeMenu()">
                 </div>
@@ -324,11 +324,11 @@
     </footer>
     <script>
         function openMenu() {
-            document.getElementById("mainMenu").style.display = "block";
+            document.getElementById("mainMenu").className = "menu-on";
         }
 
         function closeMenu() {
-            document.getElementById("mainMenu").style.display = "none";
+            document.getElementById("mainMenu").className = "menu-off";
         }
     </script>
 </body>

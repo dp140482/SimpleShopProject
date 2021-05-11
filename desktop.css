@@ -1,4 +1,7 @@
 @media (min-width: 1140px) {
+    body {
+        overflow-x: hidden;
+    }
     .growstopper {
         max-width: 1140px;
         margin: 0 auto;
@@ -108,10 +111,23 @@
     .prop__item_longcard {
         margin: 40px 0 0;
     }
-    .menu {
+    .menu-off {
         font-size: 14px;
         line-height: 17px;
-        display: none;
+        background: white;
+        position: absolute;
+        right: -310px;
+        top: 0;
+        width: 232px;
+        height: 759px;
+        padding: 0 0 33px 33px;
+        z-index: 1;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        transition: right 0.3s linear;
+    }
+    .menu-on {
+        font-size: 14px;
+        line-height: 17px;
         background: white;
         position: absolute;
         right: 0;
@@ -121,6 +137,7 @@
         padding: 0 0 33px 33px;
         z-index: 1;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        transition: right 0.3s linear;
     }
     .close-btn-container {
         display: flex;
