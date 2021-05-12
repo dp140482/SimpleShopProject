@@ -15,6 +15,8 @@
   font-size: 11px;
   line-height: 13px;
   color: #000000;
+  position: relative;
+  margin: 0 17px;
 }
 
 .reg-input {
@@ -28,7 +30,13 @@
 }
 
 .reg-radiobtn {
-  margin: 31px 0 33px;
+  position: absolute;
+  left: -17px;
+  top: 1px;
+}
+
+.radiobuttons {
+  margin: 9px 0 10px;
 }
 
 .reg-pass-help {
