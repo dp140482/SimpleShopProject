@@ -1,0 +1,62 @@
+.header
+    min-height: 363px
+    display: flex
+    justify-content: center
+    align-items: center
+    @media (min-width: 768px)
+        justify-content: flex-end
+        padding-right: 34px
+        background-image: url('../img/headman.png')
+        background-repeat: no-repeat
+        min-height: 368px
+    @media (min-width: 1140px)
+        min-height: 759px
+        background-image: url('../img/headman-huge.png')
+        background-size: contain
+        background-position-x: -227px
+        align-items: flex-start
+        padding: 287px 103px 0 0
+    &-link
+        text-decoration: none
+    &-bkg
+        background: #F1E4E6
+    &__text
+        padding-left: 14px
+        border-left: 12px solid #F16D7F
+        @media (min-width: 1140px)
+            padding-left: 19px
+
+.site
+    &%common
+        text-transform: uppercase
+        color: #222222
+    &-header
+        @extend .site%common
+        font-weight: 900
+        font-size: 38px
+        line-height: 41px
+        @media (min-width: 768px)
+            font-size: 44px
+            line-height: 53px
+        @media (min-width: 1140px)
+            font-size: 48px
+            line-height: 60px
+    &-subheader
+        @extend .site%common
+        font-weight: bold
+        font-size: 20px
+        line-height: 20px
+        @media (min-width: 768px)
+            font-size: 24px
+            line-height: 15px
+            padding-bottom: 15px
+        @media (min-width: 1140px)
+            line-height: 32px
+            font-size: 32px
+            padding-bottom: 2px
+        &__span
+            color: #F16D7F
+
+.menu-anchor
+    @media (min-width: 1140px)
+        position: relative

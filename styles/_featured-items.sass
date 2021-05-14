@@ -1,0 +1,109 @@
+.featured-items
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 53px 0 0
+    @media (min-width: 768px)
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
+    @media (min-width: 1140px)
+        margin-top: 52px
+        justify-content: space-between
+    &-header
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 48px 0
+        justify-content: flex-start
+        @media (min-width: 768px)
+            margin: 48px 10px 66px 0
+        @media (min-width: 1140px)
+            margin-bottom: 28px
+        &__header
+            font-size: 30px
+            line-height: 36px
+            padding-left: 3px
+            color: #222222
+            text-transform: capitalize
+        &__text
+            font-size: 14px
+            line-height: 22px
+            padding-left: 10px
+            color: #9F9F9F
+    &__card
+        @media (min-width: 1140px)
+            margin-top: 23px
+
+.card
+    display: block
+    text-decoration: none
+    background: #F8F8F8
+    width: 359px
+    &-block
+        position: relative
+        margin-bottom: 33px
+        &:hover
+            box-shadow: 0 0 15px gray
+        &:hover .card-pic
+            filter: brightness(50%)
+        &:hover .add-box
+            display: flex
+            justify-content: center
+            position: absolute
+            top: 35%
+            width: 100%
+    &-header
+        margin-bottom: 13px
+        font-size: 13px
+        line-height: 16px
+        letter-spacing: 0.03px
+        color: #000000
+    &-text
+        margin-bottom: 12px
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        letter-spacing: 0.05px
+        color: #000000
+    &-price
+        font-size: 16px
+        line-height: 19px
+        color: #F16D7F
+
+.text-box
+    padding: 23px 29px 18px 17px
+
+.add
+    display: flex
+    align-items: center
+    border: 1px solid white
+    padding: 7px
+    text-decoration: none
+    &-box
+        display: none
+        &:hover .add
+            box-shadow: 0 0 15px white
+    &-text
+        color: white
+        margin-left: 11px
+
+.browse-button
+    display: flex
+    justify-content: center
+    margin-bottom: 65px
+    @media (min-width: 1140px)
+        margin-bottom: 93px
+    & a
+        text-decoration: none
+
+.browse-btn
+    margin: 33px 0 33px -15px
+    padding: 14px 39px
+    border: 1px solid #FF6A6A
+    color: #F26376
+    &:hover
+        color: white
+        background: #F26376
+    @media (min-width: 768px)
+        margin: 27px 0 0

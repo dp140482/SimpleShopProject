@@ -1,0 +1,100 @@
+.prop
+    display: flex
+    align-items: center
+    flex-direction: column
+    margin: 45px 0
+    @media (min-width: 768px)
+        flex-direction: row
+        justify-content: space-between
+        flex-wrap: wrap
+        padding: 0 8px
+        margin: 13px 0 149px
+    @media (min-width: 1140px)
+        margin-top: 60px
+        margin-bottom: 97px
+        padding: 0
+    &__item
+        position: relative
+        margin: 16px 15px
+        width: 92%
+        @media (min-width: 768px)
+            width: 31%
+            margin: 8px
+        @media (min-width: 1140px)
+            width: 31.5%
+            margin: 10px 0 -10px
+        &_longcard
+            @extend .prop__item
+            @media (min-width: 768px)
+                width: 100%
+                margin: 8px
+            @media (min-width: 1140px)
+                margin: 40px 0 0
+        &__text
+            position: absolute
+            left: 50%
+            top: 50%
+            height: 100%
+            width: 100%
+            transform: translate(-50%, -50%)
+            background: rgba(33, 22, 22, 0.7)
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
+            text-transform: uppercase
+            &__uppart
+                font-size: 16px
+                line-height: 19px
+                color: white
+            &__downpart
+                font-size: 24px
+                line-height: 25px
+                color: #F16D7F
+                font-weight: bold
+    &__card
+        min-width: 343px
+        min-height: 247px
+        aspect-ratio: 343 / 247
+        background-size: cover
+        @media (min-width: 768px)
+            min-width: 232px
+            min-height: 167px
+            aspect-ratio: 232 / 167
+            background-size: cover
+        &:hover .prop__item__text
+            background: none
+        &:hover .prop__item__text__uppart
+            background: rgba(33, 22, 22, 0.7)
+        &:hover .prop__item__text__downpart
+            background: rgba(33, 22, 22, 0.7)
+    &__longcard
+        min-width: 343px
+        min-height: 111px
+        aspect-ratio: 343 / 111
+        background-size: cover
+        @media (min-width: 768px)
+            min-width: 735px
+            min-height: 116px
+            aspect-ratio: 735 / 116
+            background-size: cover
+        &:hover .prop__item__text
+            background: none
+        &:hover .prop__item__text__uppart
+            background: rgba(33, 22, 22, 0.7)
+        &:hover .prop__item__text__downpart
+            background: rgba(33, 22, 22, 0.7)
+
+.bkg_woman
+    background-image: url('../img/woman.jpeg')
+
+.bkg_man
+    background-image: url('../img/man.jpeg')
+
+.bkg_kid
+    background-image: url('../img/kid.jpeg')
+
+.bkg_categories
+    background-image: url('../img/categories.jpeg')
+    @media (min-width: 768px)
+        background-image: url('../img/categories.long.jpeg')
