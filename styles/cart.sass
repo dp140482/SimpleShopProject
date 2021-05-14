@@ -1,6 +1,9 @@
-$red: #F16D7F
-$black: #000000
-$white: #FFFFFF
+@import "init"
+@import "top-header"
+@import "breadcrumbs"
+
+$cart-red: #F16D7F
+
 $header-color: #222222
 $text-color: #575757
 $quote-btn-color: #4A4A4A
@@ -8,20 +11,6 @@ $elem-light-bd-color: #EAEAEA
 $elem-bd-color: #A4A4A4
 $dark-placeholder-color: #656565
 $light-placeholder-color: #B1B1B1
-
-.breadcrumb-bkg
-    background: #F8F3F4
-
-.breadcrumb
-    display: flex
-    justify-content: space-between
-    align-items: center
-
-.breadcrumb-leftpart
-    margin: 60px 0
-    font-size: 24px
-    line-height: 29px
-    color: $red
 
 .shopping-content
     display: flex
@@ -60,10 +49,10 @@ $light-placeholder-color: #B1B1B1
 
 .text-box
     padding: 22px 31px
-    background: $white
+    background: white
 
 .card-close
-    background: $white
+    background: white
     padding: 26px 23px 22px 75px
 
 .card-header
@@ -77,7 +66,7 @@ $light-placeholder-color: #B1B1B1
     line-height: 32px
     color: $text-color
     .price-span
-        color: $red
+        color: $cart-red
 
 .product-count
     margin-left: 24px
@@ -93,14 +82,14 @@ $light-placeholder-color: #B1B1B1
     display: block
     text-decoration: none
     border: 1px solid $elem-bd-color
-    color: $black
-    background: $white
+    color: black
+    background: white
     font-weight: 300
     font-size: 14px
     line-height: 17px
     padding: 17px 40px
     &:hover
-        color: $white
+        color: white
         background: $elem-bd-color
 
 .quote-btn
@@ -155,7 +144,7 @@ $light-placeholder-color: #B1B1B1
     margin-left: 22px
 
 .grandsum
-    color: $red
+    color: $cart-red
     margin-left: 21px
 
 .upon-button
@@ -166,15 +155,17 @@ $light-placeholder-color: #B1B1B1
     display: block
     padding: 15px 42px 16px 41px
     text-decoration: none
-    color: $white
-    background: $red
+    color: white
+    background: $cart-red
     font-weight: 300
     font-size: 16px
     line-height: 19px
-
-.main-btn:hover
-    color: $red
-    background: $white
+    &:hover
+        color: $cart-red
+        background: white
 
 .card-close-img:hover
     transform: scale(1.4)
+
+@import "middle-footer"
+@import "downfooter"

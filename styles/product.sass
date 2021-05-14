@@ -1,17 +1,12 @@
-$slideshow-bkg-color: #F7F7F7
-$dc-border-color: #EAEAEA
-$dc-header-color: #F16D7F
-$dc-under-header-color: #EF5B70
-$dc-text-header-color: #4D4D4D
-$dc-text-color: #5E5E5E
-$dc-price-color: #EF5B70
-$dc-under-price-color: #EAEAEA
-$dc-add-color: #FF6A6A
-$dc-add-text-color: #F26376
-$cart-color: #EF5B70
+@import "init"
+@import "top-header"
+@import "breadcrumbs"
+@import "filter-n-sort"
+
+$dc-red: #EF5B70
 
 .slideshow
-    background: $slideshow-bkg-color
+    background: #F7F7F7
     display: flex
     justify-content: space-between
     align-items: center
@@ -44,21 +39,21 @@ $cart-color: #EF5B70
 
 .desc-card
     background: white
-    border: 1px solid $dc-border-color
+    border: 1px solid #EAEAEA
 
 .dc-header
     font-weight: 300
     font-size: 14px
     line-height: 17px
-    color: $dc-header-color
+    color: #F16D7F
     text-align: center
     margin-top: 64px
 
 .dc-under-header
     width: 63px
     height: 3px
-    color: $dc-under-header-color
-    background: $dc-under-header-color
+    color: $dc-red
+    background: $dc-red
     border: none
     margin: 12px auto
 
@@ -66,7 +61,7 @@ $cart-color: #EF5B70
     font-weight: 300
     font-size: 18px
     line-height: 22px
-    color: $dc-text-header-color
+    color: #4D4D4D
     text-align: center
 
 .dc-text
@@ -75,21 +70,21 @@ $cart-color: #EF5B70
     font-size: 14px
     line-height: 17px
     text-align: center
-    color: $dc-text-color
+    color: #5E5E5E
     margin: 48px auto 32px
 
 .dc-price
     font-weight: 300
     font-size: 24px
     line-height: 29px
-    color: $dc-price-color
+    color: $dc-red
     text-align: center
 
 .dc-under-price
     width: 641px
     height: 1px
-    color: $dc-under-price-color
-    background: $dc-under-price-color
+    color: #EAEAEA
+    background: #EAEAEA
     border: none
     margin: 65px auto
 
@@ -113,16 +108,16 @@ $cart-color: #EF5B70
     top: 15px
     width: 26px
     height: 24px
-    fill: $cart-color
+    fill: $dc-red
 
 .dc-add
     text-decoration: none
     display: block
     padding: 15px 56px 14px 71px
-    border: 1px solid $dc-add-color
+    border: 1px solid $dc-red
     position: relative
     &:hover
-        background: $dc-add-text-color
+        background: $dc-red
     &:hover .dc-add-text
         color: white
     &:hover .floating-cart
@@ -131,7 +126,12 @@ $cart-color: #EF5B70
 .dc-add-text
     font-size: 16px
     line-height: 19px
-    color: $dc-add-text-color
+    color: $dc-red
+
+@import "featured-items"
 
 .featured-items
     padding-top: 664px
+
+@import "middle-footer"
+@import "downfooter"
