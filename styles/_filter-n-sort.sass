@@ -1,0 +1,115 @@
+$filter-red: #EF5B70
+
+.filter-icon
+    width: 15px
+    height: 10px
+    margin: 0 11px
+    fill: black
+
+.filter-n-sort
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 718px
+    font-size: 14px
+    height: 112px
+    &__filter
+        padding-left: 15px
+        font-weight: 600
+        color: black
+        position: relative
+        list-style-type: none
+        height: auto
+        width: 360px
+        &:hover .filter-menu-list
+            display: block
+    &__sort
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        color: #6F6E6E
+        list-style-type: none
+
+.filter-menu-list
+    display: none
+    list-style-type: none
+    text-transform: uppercase
+    font-weight: normal
+    color: #6F6E6E
+    position: absolute
+    left: 0
+    top: -9px
+    width: 360px
+    z-index: 1
+    background: white
+    padding: 10px 17px 0
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    font-size: 14px
+    line-height: 17px
+
+.filter-head
+    text-decoration: none
+    color: black
+    font-size: 13px
+
+.filter-menu-head .filter-head
+    font-weight: 600
+    color: $filter-red
+
+.filter-menu-head .filter-icon
+    fill: $filter-red
+
+.filter-menu-elem:hover .category-menu
+    display: block
+
+.filter-menu-elem-summary
+    padding: 11px
+    margin: 14px 0
+    font-size: 14px
+    border-bottom: 1px solid #ebebeb
+    border-left: 5px solid $filter-red
+    display: block
+
+.sort-details-arrow
+    margin-left: 11px
+
+.sort-btn
+    margin-right: 26px
+    position: relative
+
+.category-menu
+    display: none
+    padding: 1px 17px
+    margin-bottom: -5px
+    list-style-type: none
+    text-transform: capitalize
+    transition: 0.5s
+    &-elem
+        margin: 11px 0
+    &-link
+        text-decoration: none
+        color: inherit
+
+.size-menu
+    list-style-type: none
+    font-size: 14px
+    line-height: 16px
+    font-weight: 400
+    color: #6f6e6e
+    padding: 1px 10px 10px
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    width: 79px
+    position: absolute
+    left: -7px
+    z-index: 1
+    background: white
+    display: none
+
+.sort-btn:hover .size-menu
+    display: block
+
+.checkbox
+    width: 12px
+    height: 12px
+    margin: 5px
+    border: 1px solid #ebebeb
