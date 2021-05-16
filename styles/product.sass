@@ -10,6 +10,8 @@ $dc-red: #EF5B70
     display: flex
     justify-content: space-between
     align-items: center
+    border-top: 1px solid #e5e5e5
+    border-bottom: 1px solid #e5e5e5
 
 .slideshow-arrow
     width: 47px
@@ -130,14 +132,12 @@ $dc-red: #EF5B70
 
 @import "featured-items"
 
-.featured-items
-    padding-top: 664px
-
 @import "middle-footer"
 @import "downfooter"
 
 @media (min-width: 768px)
     @import "top-header-tablet"
+    @import "breadcrumbs-tablet"
     @import "featured-items-tablet"
     @import "middle-footer-tablet"
     @import "downfooter-tablet"
@@ -145,6 +145,11 @@ $dc-red: #EF5B70
 @media (min-width: 1140px)
     @import "init-desktop"
     @import "top-header-desktop"
+    @import "breadcrumbs-desktop"
     @import "featured-items-desktop"
     @import "middle-footer-desktop"
     @import "downfooter-desktop"
+
+.featured-items
+    padding-top: 664px
+    margin-top: 0
