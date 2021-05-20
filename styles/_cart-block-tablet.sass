@@ -1,0 +1,51 @@
+.formbox
+    flex-direction: row
+    justify-content: space-between
+
+@function tovw($size)
+    @return $size / 7.68px * 1vw
+
+.address-form
+    width: 49%
+    &-header
+        font-size: tovw(16px)
+        line-height: tovw(19px)
+        margin-bottom: tovw(10.5px)
+
+.address-input
+    margin: tovw(10px) 0
+    padding: tovw(13px) tovw(17px) tovw(15px)
+    font-size: tovw(13px)
+    line-height: tovw(16px)
+
+.quote-btn
+    font-size: tovw(11px)
+    line-height: tovw(13px)
+    text-transform: uppercase
+
+.proceedblock
+    padding: tovw(39px) tovw(43px) tovw(42px) tovw(44px)
+    width: 49%
+    margin: 54px 0 82px
+
+.subtotalp
+    font-size: tovw(11px)
+    line-height: tovw(13px)
+
+.grandtotalp
+    font-size: tovw(16px)
+    line-height: tovw(19px)
+    margin: tovw(12px) -5px tovw(21px) 0
+
+.subtotalsum
+    margin-left: tovw(22px)
+
+.totalsum
+    margin-left: tovw(21px)
+
+.proceedbutton
+    padding: tovw(15px) tovw(15px)
+    margin-top: tovw(17px)
+    width: tovw(273px)
+    font-size: tovw(16px)
+    line-height: tovw(19px)

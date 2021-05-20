@@ -8,8 +8,6 @@
     <title>The Brand – Cart</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
     <link rel="stylesheet" href="styles/cart.css">
-    <!-- Для вёрстки по картинке: вставить в конец head -->
-    <link rel="stylesheet" href="test/test.css">
 </head>
 
 <body>
@@ -75,56 +73,58 @@
         </nav>
     </header>
 
-    <section>
-        <div class="growstopper">
-            <div class="cartpage-content">
-                <div class="cardbox">
-                    <div class="shoppingcard">
-                        <img src="img/pic3.jpeg" alt="pic3" class="card-pic">
-                        <div class="text-box">
+    <section class="growstopper">
+        <div class="cartblock-content">
+            <div class="cartblock">
+                <section class="cardbox">
+                    <div class="cardbox-card">
+                        <img src="img/pic3.jpeg" alt="pic3" class="card-picture">
+                        <div class="textbox">
                             <p class="card-header">MANGO PEOPLE<br> T-SHIRT</p>
                             <p class="card-data">
                                 Price: <span class="price-span">$300</span><br> Color: <span class="color-span">Red</span><br> Size: <span class="size-span">Xl</span><br> Quantity:
-                                <input type="text" class="product-count" id="product1-count" value="2" pattern="[0-9]*">
+                                <input type="text" class="product-count-input" id="product1-count" value="2" pattern="[0-9]*">
                             </p>
-                            <div class="card-close">
-                                <a href="#"><img src="img/close-btn-face.svg" alt="close" class="card-close-img"></a>
-                            </div>
+                        </div>
+                        <div class="card-close">
+                            <a href="#"><img src="img/close-btn-face.svg" alt="close" class="card-close-img"></a>
                         </div>
                     </div>
-                    <div class="shoppingcard">
-                        <img src="img/pic11.jpeg" alt="pic11" class="card-pic">
-                        <div class="text-box">
+                    <div class="cardbox-card">
+                        <img src="img/pic11.jpeg" alt="pic11" class="card-picture">
+                        <div class="textbox">
                             <p class="card-header">MANGO PEOPLE<br> T-SHIRT</p>
                             <p class="card-data">
                                 Price: <span class="price-span">$300</span><br> Color: <span class="color-span">Red</span><br> Size: <span class="size-span">Xl</span><br> Quantity:
-                                <input type="text" class="product-count" id="product2-count" value="2">
+                                <input type="text" class="product-count-input" id="product2-count" value="2" pattern="[0-9]*">
                             </p>
-                            <div class="card-close">
-                                <a href="#"><img src="img/close-btn-face.svg" alt="close" class="card-close-img"></a>
-                            </div>
+                        </div>
+                        <div class="card-close">
+                            <a href="#"><img src="img/close-btn-face.svg" alt="close" class="card-close-img"></a>
                         </div>
                     </div>
                     <div class="cardbox-buttons">
                         <a href="#" class="cardbox-btn">Clear shopping cart</a>
                         <a href="catalog.html" class="cardbox-btn">Continue shopping</a>
                     </div>
-                </div>
-                <div class="countblock">
+                </section>
+                <div class="formbox">
                     <form action="#" class="address-form">
                         <h2 class="address-form-header">SHIPPING ADRESS</h2>
                         <input type="text" class="address-input address-country" id="address-form-country" placeholder="Bangladesh" pattern="\S+[A-Za-z]" title="Type correct country name">
                         <input type="text" class="address-input" id="address-form-state" placeholder="State" pattern="\S+[A-Za-z]" title="Type correct state/region name">
                         <input type="text" class="address-input" id="address-form-postcode" placeholder="Postcode / Zip" pattern="[0-9]*" title="Type postcode or zip">
                         <div class="address-form-button">
-                            <input type="submit" value="GET A QUOTE" class="quote-btn">
+                            <input type="submit" value="Get a quote" class="quote-btn">
                         </div>
                     </form>
-                    <div class="calculator">
-                        <p class="subtotal">SUB TOTAL <span class="sum" id="sub-total">$900</span></p>
-                        <p class="total">GRAND TOTAL <span class="grandsum" id="grand-total">$900</span></p>
-                        <div class="upon-button">
-                            <a href="catalog.html" class="main-btn">PROCEED TO CHECKOUT</a>
+                    <div class="proceedblock">
+                        <p class="subtotalp">SUB TOTAL <span class="subtotalsum">$900</span></p>
+                        <p class="grandtotalp">GRAND TOTAL <span class="totalsum">$900</span></p>
+                        <div class="line">
+                            <a href="" class="proceedbutton">
+                                PROCEED TO CHECKOUT
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -183,8 +183,7 @@
             </div>
         </div>
     </footer>
-    <!-- Для вёрстки по картинке: вставить в конец body 
-    <img src="test/cart-768.png" alt="" class="test-img"> -->
+
     <script>
         function openMenu() {
             document.getElementById("mainMenu").className = "menu-on";

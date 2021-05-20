@@ -1,8 +1,5 @@
 .DS_Store
 .vscode
 test
-style/cart.css.map
-style/catalog.css.map
-style/mainpage.css.map
-style/product.css.map
-style/reg.css.map
+style/*.map
+*.map
