@@ -8,7 +8,9 @@
     <title>The Brand – Catalog</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
     <link rel="stylesheet" href="styles/catalog.css">
+</head>
 
+<body>
     <svg width="15" height="10" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="filter-icon" viewBox="0 0 15 10">
             <title>filter-icon</title>
@@ -16,9 +18,6 @@
         </symbol>
     </svg>
 
-</head>
-
-<body>
     <header>
         <nav class="top-bkg">
             <div class="growstopper">
@@ -42,7 +41,11 @@
             <div class="growstopper">
                 <div class="breadcrumb">
                     <div class="breadcrumb-leftpart">NEW ARRIVALS</div>
-                    <div class="breadcrumb-rightpart">HOME / MEN / <span class="breadcrumb-current">NEW ARRIVALS</span></div>
+                    <div class="breadcrumb-rightpart">
+                        <a href="index.html" class="breadcrumb-link">HOME</a> /
+                        <a href="catalog.html" class="breadcrumb-link">MEN</a> /
+                        <a href="catalog.html" class="breadcrumb-current">NEW ARRIVALS</a>
+                    </div>
                 </div>
             </div>
             <nav class="menu-off" id="mainMenu">
@@ -78,7 +81,7 @@
         </nav>
     </header>
 
-    <section class="growstopper">
+    <div class="growstopper">
         <nav class="filter-n-sort">
             <ul class="filter-n-sort__filter">
                 <li class="filter-inner">
@@ -187,9 +190,9 @@
                 </li>
             </ul>
         </nav>
-    </section>
+    </div>
 
-    <section class="growstopper">
+    <div class="growstopper">
         <div class="featured-items">
             <div class="card-block">
                 <a href="product.html" class="card">
@@ -362,9 +365,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="pagination">
+    <div class="pagination">
         <ul class="pagination-btns">
             <li class="arrow">
                 <a href="#" class="pagination-link">
@@ -383,7 +386,7 @@
                 </a>
             </li>
         </ul>
-    </section>
+    </div>
 
     <footer>
         <div class="upfooter-bkg">

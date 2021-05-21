@@ -8,7 +8,9 @@
     <title>The Brand – Registration</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
     <link rel="stylesheet" href="styles/reg.css">
+</head>
 
+<body>
     <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="join-arrow-icon" viewBox="0 0 17 10">
             <path d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"/>
@@ -16,9 +18,6 @@
         </symbol>
     </svg>
 
-</head>
-
-<body>
     <header>
         <nav class="top-bkg">
             <div class="growstopper">
@@ -77,46 +76,46 @@
         </nav>
     </header>
 
-    <section class="reg growstopper">
-        <form action="#" class="reg-form">
-            <label class="reg-lab">Your Name<br>
+    <section class="growstopper">
+        <div class="reg">
+            <form action="#" class="reg-form">
+                <label class="reg-lab">Your Name</label><br>
                 <input type="text" name="first-name" id="firstName" class="reg-input" placeholder="First Name"><br>
-                <input type="text" name="last-name" id="lastName" class="reg-input" placeholder="Last Name">
-            </label><br>
-            <div class="radiobuttons">
-                <label class="reg-lab_radio">
+                <input type="text" name="last-name" id="lastName" class="reg-input" placeholder="Last Name"><br>
+                <div class="radiobuttons">
+                    <label class="reg-lab_radio">
                     <input type="radio" name="sex" id="male" class="reg-radiobtn">
                     Male
                 </label>
-                <label class="reg-lab_radio">
+                    <label class="reg-lab_radio">
                     <input type="radio" name="sex" id="female" class="reg-radiobtn">
                     Female
                 </label>
-            </div><br>
-            <label class="reg-lab">Login details<br>
+                </div><br>
+                <label class="reg-lab">Login details</label><br>
                 <input type="text" name="e-mail" id="eMail" class="reg-input" placeholder="Email"><br>
                 <input type="text" name="password" id="password" class="reg-input reg-pass" placeholder="Password">
                 <p class="reg-pass-help">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-            </label><br>
-            <button type="submit" class="submit-btn">
+                <button type="submit" class="submit-btn">
                 Join Now
                 <svg class="join-now-arrow">
                     <use xlink:href="#join-arrow-icon" />
                 </svg>
             </button>
-        </form>
-        <div class="regtext">
-            <h3 class="regtext-header">LOYALTY HAS ITS PERKS</h3>
-            <p class="regtext-body">
-                Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
-            </p>
-            <ul class="regtext-ul">
-                <li class="reg-li">15% off welcome offer</li>
-                <li class="reg-li">Free shipping, returns and exchanges on all orders</li>
-                <li class="reg-li">$10 off a purchase on your birthday</li>
-                <li class="reg-li">Early access to products</li>
-                <li class="reg-li">Exclusive offers & rewards</li>
-            </ul>
+            </form>
+            <div class="regtext">
+                <h3 class="regtext-header">LOYALTY HAS ITS PERKS</h3>
+                <p class="regtext-body">
+                    Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+                </p>
+                <ul class="regtext-ul">
+                    <li class="reg-li">15% off welcome offer</li>
+                    <li class="reg-li">Free shipping, returns and exchanges on all orders</li>
+                    <li class="reg-li">$10 off a purchase on your birthday</li>
+                    <li class="reg-li">Early access to products</li>
+                    <li class="reg-li">Exclusive offers & rewards</li>
+                </ul>
+            </div>
         </div>
     </section>
 
