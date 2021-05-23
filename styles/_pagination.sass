@@ -13,15 +13,21 @@
     &-link
         text-decoration: none
         color: inherit
+        &:hover
+            color: #EF5B70
 
 .left-arrow
     width: 8px
     height: 14px
+    &:hover
+        transform: scale(1.6)
 
 .right-arrow
     width: 8px
     height: 14px
     transform: rotate(180deg)
+    &:hover
+        transform: scale(1.6) rotate(180deg)
 
 .page
     font-weight: 300
@@ -29,6 +35,3 @@
     line-height: 19px
     margin: 12px
     color: darkgray
-
-.active-page
-    color: #EF5B70

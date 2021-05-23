@@ -79,29 +79,33 @@
     <section class="growstopper">
         <div class="reg">
             <form action="#" class="reg-form">
-                <label class="reg-lab">Your Name</label><br>
-                <input type="text" name="first-name" id="firstName" class="reg-input" placeholder="First Name"><br>
-                <input type="text" name="last-name" id="lastName" class="reg-input" placeholder="Last Name"><br>
-                <div class="radiobuttons">
+                <fieldset class="reg-form-fieldset">
+                    <label class="reg-lab">Your Name</label>
+                    <input type="text" name="first-name" id="firstName" class="reg-input" placeholder="First Name">
+                    <input type="text" name="last-name" id="lastName" class="reg-input" placeholder="Last Name">
+                </fieldset>
+                <fieldset class="radiobuttons">
                     <label class="reg-lab_radio">
-                    <input type="radio" name="sex" id="male" class="reg-radiobtn">
-                    Male
-                </label>
+                        <input type="radio" name="sex" id="male" class="reg-radiobtn">
+                        Male
+                    </label>
                     <label class="reg-lab_radio">
-                    <input type="radio" name="sex" id="female" class="reg-radiobtn">
-                    Female
-                </label>
-                </div><br>
-                <label class="reg-lab">Login details</label><br>
-                <input type="text" name="e-mail" id="eMail" class="reg-input" placeholder="Email"><br>
-                <input type="text" name="password" id="password" class="reg-input reg-pass" placeholder="Password">
-                <p class="reg-pass-help">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                        <input type="radio" name="sex" id="female" class="reg-radiobtn">
+                        Female
+                    </label>
+                </fieldset>
+                <fieldset class="reg-form-fieldset">
+                    <label class="reg-lab">Login details</label>
+                    <input type="text" name="e-mail" id="eMail" class="reg-input" placeholder="Email">
+                    <input type="text" name="password" id="password" class="reg-input reg-pass" placeholder="Password">
+                    <p class="reg-pass-help">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                </fieldset>
                 <button type="submit" class="submit-btn">
-                Join Now
-                <svg class="join-now-arrow">
-                    <use xlink:href="#join-arrow-icon" />
-                </svg>
-            </button>
+                    Join Now
+                    <svg class="join-now-arrow">
+                        <use xlink:href="#join-arrow-icon" />
+                    </svg>
+                </button>
             </form>
             <div class="regtext">
                 <h3 class="regtext-header">LOYALTY HAS ITS PERKS</h3>
