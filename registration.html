@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Brand – Cart</title>
+    <title>The Brand – Registration</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
     <link rel="stylesheet" href="phone.css">
     <link rel="stylesheet" href="tablet.css">
     <link rel="stylesheet" href="desktop.css">
     <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="reg.css">
+
+    <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="join-arrow-icon" viewBox="0 0 17 10">
+            <path d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"/>
+            <path d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"/>
+        </symbol>
+    </svg>
+
 </head>
 
 <body>
@@ -36,7 +45,7 @@
         <nav class="breadcrumb-bkg menu-anchor">
             <div class="growstopper">
                 <div class="breadcrumb">
-                    <div class="breadcrumb-leftpart">SHOPPING CART</div>
+                    <div class="breadcrumb-leftpart">REGISTRATION</div>
                 </div>
             </div>
             <nav class="menu-off" id="mainMenu">
@@ -72,60 +81,46 @@
         </nav>
     </header>
 
-    <section class="shopping-content-bkg">
-        <div class="growstopper">
-            <div class="shopping-content">
-                <div class="cardbox">
-                    <div class="shopping-card">
-                        <img src="img/pic3.jpeg" alt="pic3" class="card-pic">
-                        <div class="text-box">
-                            <p class="card-header">MANGO PEOPLE T-SHIRT</p>
-                            <p class="card-data">
-                                Price: <span class="price-span">$300</span><br> Color: <span class="color-span">Red</span><br> Size: <span class="size-span">Xl</span><br> Quantity:
-                                <input type="text" class="product-count" id="product1-count" value="2" pattern="[0-9]*">
-                            </p>
-                        </div>
-                        <div class="card-close">
-                            <a href="#"><img src="img/close-btn-face.svg" alt="close" class="card-close-img"></a>
-                        </div>
-                    </div>
-                    <div class="shopping-card">
-                        <img src="img/pic11.jpeg" alt="pic11" class="card-pic">
-                        <div class="text-box">
-                            <p class="card-header">MANGO PEOPLE T-SHIRT</p>
-                            <p class="card-data">
-                                Price: <span class="price-span">$300</span><br> Color: <span class="color-span">Red</span><br> Size: <span class="size-span">Xl</span><br> Quantity:
-                                <input type="text" class="product-count" id="product2-count" value="2">
-                            </p>
-                        </div>
-                        <div class="card-close">
-                            <a href="#"><img src="img/close-btn-face.svg" alt="close" class="card-close-img"></a>
-                        </div>
-                    </div>
-                    <div class="shopping-buttons">
-                        <a href="#" class="shopping-btn">CLEAR SHOPPING CART</a>
-                        <a href="catalog.html" class="shopping-btn">CONTINUE SHOPPING</a>
-                    </div>
-                </div>
-                <div class="countblock">
-                    <form action="#" class="address-form">
-                        <h2 class="address-form-header">SHIPPING ADRESS</h2>
-                        <input type="text" class="address-input address-country" id="address-form-country" placeholder="Bangladesh" pattern="\S+[A-Za-z]" title="Type correct country name">
-                        <input type="text" class="address-input" id="address-form-state" placeholder="State" pattern="\S+[A-Za-z]" title="Type correct state/region name">
-                        <input type="text" class="address-input" id="address-form-postcode" placeholder="Postcode / Zip" pattern="[0-9]*" title="Type postcode or zip">
-                        <div class="address-form-button">
-                            <input type="submit" value="GET A QUOTE" class="quote-btn">
-                        </div>
-                    </form>
-                    <div class="calculator">
-                        <p class="subtotal">SUB TOTAL <span class="sum" id="sub-total">$900</span></p>
-                        <p class="total">GRAND TOTAL <span class="grandsum" id="grand-total">$900</span></p>
-                        <div class="upon-button">
-                            <a href="catalog.html" class="main-btn">PROCEED TO CHECKOUT</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="reg growstopper">
+        <form action="#" class="reg-form">
+            <label class="reg-lab">Your Name<br>
+                <input type="text" name="first-name" id="firstName" class="reg-input" placeholder="First Name"><br>
+                <input type="text" name="last-name" id="lastName" class="reg-input" placeholder="Last Name">
+            </label><br>
+            <div class="radiobuttons">
+                <label class="reg-lab_radio">
+                    <input type="radio" name="sex" id="male" class="reg-radiobtn">
+                    Male
+                </label>
+                <label class="reg-lab_radio">
+                    <input type="radio" name="sex" id="female" class="reg-radiobtn">
+                    Female
+                </label>
+            </div><br>
+            <label class="reg-lab">Login details<br>
+                <input type="text" name="e-mail" id="eMail" class="reg-input" placeholder="Email"><br>
+                <input type="text" name="password" id="password" class="reg-input reg-pass" placeholder="Password">
+                <p class="reg-pass-help">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+            </label><br>
+            <button type="submit" class="submit-btn">
+                Join Now
+                <svg class="join-now-arrow">
+                    <use xlink:href="#join-arrow-icon" />
+                </svg>
+            </button>
+        </form>
+        <div class="regtext">
+            <h3 class="regtext-header">LOYALTY HAS ITS PERKS</h3>
+            <p class="regtext-body">
+                Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+            </p>
+            <ul class="regtext-ul">
+                <li class="reg-li">15% off welcome offer</li>
+                <li class="reg-li">Free shipping, returns and exchanges on all orders</li>
+                <li class="reg-li">$10 off a purchase on your birthday</li>
+                <li class="reg-li">Early access to products</li>
+                <li class="reg-li">Exclusive offers & rewards</li>
+            </ul>
         </div>
     </section>
 

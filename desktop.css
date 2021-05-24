@@ -1,4 +1,7 @@
 @media (min-width: 1140px) {
+    body {
+        overflow-x: hidden;
+    }
     .growstopper {
         max-width: 1140px;
         margin: 0 auto;
@@ -47,6 +50,9 @@
         background-position-x: -227px;
         align-items: flex-start;
         padding: 287px 103px 0 0;
+    }
+    .menu-anchor {
+        position: relative;
     }
     .header__text {
         padding-left: 19px;
@@ -105,22 +111,45 @@
     .prop__item_longcard {
         margin: 40px 0 0;
     }
-    .menu-block {
-        position: relative;
-    }
-    .menu {
+    .menu-off {
         font-size: 14px;
         line-height: 17px;
-        display: none;
-        z-index: 1;
-    }
-    .menu-block:hover .menu {
-        display: block;
         background: white;
         position: absolute;
+        right: -310px;
+        top: 0;
         width: 232px;
-        height: 764px;
-        padding: 33px;
+        height: 759px;
+        padding: 0 0 33px 33px;
+        z-index: 1;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        transition: right 0.3s linear;
+    }
+    .menu-on {
+        font-size: 14px;
+        line-height: 17px;
+        background: white;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 232px;
+        height: 759px;
+        padding: 0 0 33px 33px;
+        z-index: 1;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        transition: right 0.3s linear;
+    }
+    .close-btn-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .close-btn {
+        width: 12px;
+        height: 12px;
+        margin: 16px;
+    }
+    .close-btn:hover {
+        transform: scale(2);
     }
     .submenu {
         padding: 22px;

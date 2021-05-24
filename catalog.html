@@ -31,52 +31,53 @@
                         <img src="img/mglass.svg " alt="mglass" class="mgpic">
                     </div>
                     <div class="rightpart">
-                        <div class="menu-block">
-                            <img src="img/menu-btn-pic.svg " alt="menu-btn-pic" class="desktop_mod">
-                            <div class="menu">
-                                <h2 class="menu-main-header">menu</h2>
-                                <h3 class="menu-header">man</h3>
-                                <div class="submenu">
-                                    <a href="#" class="menu-elem">Accessories</a>
-                                    <a href="#" class="menu-elem">Bags</a>
-                                    <a href="#" class="menu-elem">Denim</a>
-                                    <a href="#" class="menu-elem">T-Shirts</a>
-                                </div>
-                                <h3 class="menu-header">woman</h3>
-                                <div class="submenu">
-                                    <a href="#" class="menu-elem">Accessories</a>
-                                    <a href="#" class="menu-elem">Jackets & Coats</a>
-                                    <a href="#" class="menu-elem">Polos</a>
-                                    <a href="#" class="menu-elem">T-Shirts</a>
-                                    <a href="#" class="menu-elem">Shirts</a>
-                                </div>
-                                <h3 class="menu-header">kids</h3>
-                                <div class="submenu">
-                                    <a href="#" class="menu-elem">Accessories</a>
-                                    <a href="#" class="menu-elem">Jackets & Coats</a>
-                                    <a href="#" class="menu-elem">Polos</a>
-                                    <a href="#" class="menu-elem">T-Shirts</a>
-                                    <a href="#" class="menu-elem">Shirts</a>
-                                    <a href="#" class="menu-elem">Bags</a>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="img/people.svg " alt="people" class="no-phone no-phone_pic desktop_mod">
-                        <div class="chart">
-                            <img src="img/cart.svg " alt="chart" class="no-phone no-phone_pic">
+                        <img src="img/menu-btn-pic.svg " alt="menu-btn-pic" class="desktop_mod" onclick="openMenu()">
+                        <a href="registration.html"><img src="img/people.svg " alt="people" class="no-phone no-phone_pic desktop_mod"></a>
+                        <a href="cart.html" class="cart">
+                            <img src="img/cart.svg " alt="cart" class="no-phone no-phone_pic">
                             <div class="goods no-phone">5</div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
-        <nav class="breadcrumb-bkg">
+        <nav class="breadcrumb-bkg menu-anchor">
             <div class="growstopper">
                 <div class="breadcrumb">
                     <div class="breadcrumb-leftpart">NEW ARRIVALS</div>
                     <div class="breadcrumb-rightpart">HOME / MEN / <span class="breadcrumb-current">NEW ARRIVALS</span></div>
                 </div>
             </div>
+            <nav class="menu-off" id="mainMenu">
+                <div class="close-btn-container">
+                    <img src="img/close-btn-face.svg" alt="Close menu" class="close-btn" onclick="closeMenu()">
+                </div>
+                <h2 class="menu-main-header">menu</h2>
+                <h3 class="menu-header">man</h3>
+                <div class="submenu">
+                    <a href="#" class="menu-elem">Accessories</a>
+                    <a href="#" class="menu-elem">Bags</a>
+                    <a href="#" class="menu-elem">Denim</a>
+                    <a href="#" class="menu-elem">T-Shirts</a>
+                </div>
+                <h3 class="menu-header">woman</h3>
+                <div class="submenu">
+                    <a href="#" class="menu-elem">Accessories</a>
+                    <a href="#" class="menu-elem">Jackets & Coats</a>
+                    <a href="#" class="menu-elem">Polos</a>
+                    <a href="#" class="menu-elem">T-Shirts</a>
+                    <a href="#" class="menu-elem">Shirts</a>
+                </div>
+                <h3 class="menu-header">kids</h3>
+                <div class="submenu">
+                    <a href="#" class="menu-elem">Accessories</a>
+                    <a href="#" class="menu-elem">Jackets & Coats</a>
+                    <a href="#" class="menu-elem">Polos</a>
+                    <a href="#" class="menu-elem">T-Shirts</a>
+                    <a href="#" class="menu-elem">Shirts</a>
+                    <a href="#" class="menu-elem">Bags</a>
+                </div>
+            </nav>
         </nav>
     </header>
 
@@ -194,7 +195,7 @@
     <section class="growstopper">
         <div class="featured-items">
             <div class="card-block">
-                <a href="#" class="card">
+                <a href="product.html" class="card">
                     <img src="img/pic1.jpeg" alt="pic1" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
@@ -205,7 +206,7 @@
                     </div>
                 </a>
                 <div class="add-box">
-                    <a href="#" class="add">
+                    <a href="cart.html" class="add">
                         <img src="img/cart.svg" alt="chart">
                         <p class="add-text">Add to Cart</p>
                     </a>
@@ -213,7 +214,7 @@
             </div>
 
             <div class="card-block">
-                <a href="#" class="card">
+                <a href="product.html" class="card">
                     <img src="img/pic11.jpeg" alt="pic11" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
@@ -224,7 +225,7 @@
                     </div>
                 </a>
                 <div class="add-box">
-                    <a href="#" class="add">
+                    <a href="cart.html" class="add">
                         <img src="img/cart.svg" alt="chart">
                         <p class="add-text">Add to Cart</p>
                     </a>
@@ -232,7 +233,7 @@
             </div>
 
             <div class="card-block">
-                <a href="#" class="card">
+                <a href="product.html" class="card">
                     <img src="img/pic3.jpeg" alt="pic3" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
@@ -243,7 +244,7 @@
                     </div>
                 </a>
                 <div class="add-box">
-                    <a href="#" class="add">
+                    <a href="cart.html" class="add">
                         <img src="img/cart.svg" alt="chart">
                         <p class="add-text">Add to Cart</p>
                     </a>
@@ -251,7 +252,7 @@
             </div>
 
             <div class="card-block">
-                <a href="#" class="card">
+                <a href="product.html" class="card">
                     <img src="img/pic4.jpeg" alt="pic4" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
@@ -262,7 +263,7 @@
                     </div>
                 </a>
                 <div class="add-box">
-                    <a href="#" class="add">
+                    <a href="cart.html" class="add">
                         <img src="img/cart.svg" alt="chart">
                         <p class="add-text">Add to Cart</p>
                     </a>
@@ -270,7 +271,7 @@
             </div>
 
             <div class="card-block">
-                <a href="#" class="card">
+                <a href="product.html" class="card">
                     <img src="img/pic10.jpeg" alt="pic10" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
@@ -281,7 +282,7 @@
                     </div>
                 </a>
                 <div class="add-box">
-                    <a href="#" class="add">
+                    <a href="cart.html" class="add">
                         <img src="img/cart.svg" alt="chart">
                         <p class="add-text">Add to Cart</p>
                     </a>
@@ -289,7 +290,7 @@
             </div>
 
             <div class="card-block">
-                <a href="#" class="card">
+                <a href="product.html" class="card">
                     <img src="img/pic8.jpeg" alt="pic8" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
@@ -300,7 +301,7 @@
                     </div>
                 </a>
                 <div class="add-box">
-                    <a href="#" class="add">
+                    <a href="cart.html" class="add">
                         <img src="img/cart.svg" alt="chart">
                         <p class="add-text">Add to Cart</p>
                     </a>
@@ -308,7 +309,7 @@
             </div>
 
             <div class="card-block">
-                <a href="#" class="card">
+                <a href="product.html" class="card">
                     <img src="img/pic12.jpeg" alt="pic12" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
@@ -319,7 +320,7 @@
                     </div>
                 </a>
                 <div class="add-box">
-                    <a href="#" class="add">
+                    <a href="cart.html" class="add">
                         <img src="img/cart.svg" alt="chart">
                         <p class="add-text">Add to Cart</p>
                     </a>
@@ -327,7 +328,7 @@
             </div>
 
             <div class="card-block">
-                <a href="#" class="card">
+                <a href="product.html" class="card">
                     <img src="img/pic9.jpeg" alt="pic9" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
@@ -338,7 +339,7 @@
                     </div>
                 </a>
                 <div class="add-box">
-                    <a href="#" class="add">
+                    <a href="cart.html" class="add">
                         <img src="img/cart.svg" alt="chart">
                         <p class="add-text">Add to Cart</p>
                     </a>
@@ -346,7 +347,7 @@
             </div>
 
             <div class="card-block">
-                <a href="#" class="card">
+                <a href="product.html" class="card">
                     <img src="img/pic7.jpeg" alt="pic7" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
@@ -357,7 +358,7 @@
                     </div>
                 </a>
                 <div class="add-box">
-                    <a href="#" class="add">
+                    <a href="cart.html" class="add">
                         <img src="img/cart.svg" alt="chart">
                         <p class="add-text">Add to Cart</p>
                     </a>
@@ -465,6 +466,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        function openMenu() {
+            document.getElementById("mainMenu").className = "menu-on";
+        }
+
+        function closeMenu() {
+            document.getElementById("mainMenu").className = "menu-off";
+        }
+    </script>
 </body>
 
 </html>

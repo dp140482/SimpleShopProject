@@ -5,8 +5,9 @@
     .no-phone_pic {
         margin: 0 23px;
     }
-    .chart {
+    .cart {
         position: relative;
+        display: block;
     }
     .goods {
         font-size: 12px;
