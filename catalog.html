@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Brand</title>
+    <title>The Brand – Catalog</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
     <link rel="stylesheet" href="phone.css">
     <link rel="stylesheet" href="tablet.css">
     <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="catalog.css">
+
+    <svg width="15" height="10" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="filter-icon" viewBox="0 0 15 10">
+            <title>filter-icon</title>
+            <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+        </symbol>
+    </svg>
+
 </head>
 
 <body>
     <header>
-        <div class="top-bkg">
+        <nav class="top-bkg">
             <div class="growstopper">
                 <div class="top-menu">
                     <div class="leftpart">
@@ -60,72 +69,129 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="header-bkg">
+        </nav>
+        <nav class="breadcrumb-bkg">
             <div class="growstopper">
-                <div class="header">
-                    <a href="index.html" class="header-link">
-                        <div class="header__text">
-                            <h1 class="site-header">The Brand</h1>
-                            <div class="site-subheader">of luxerious
-                                <span class="site-subheader__span">fashion</span>
-                            </div>
-                        </div>
-                    </a>
+                <div class="breadcrumb">
+                    <div class="breadcrumb-leftpart">NEW ARRIVALS</div>
+                    <div class="breadcrumb-rightpart">HOME / MEN / <span class="breadcrumb-current">NEW ARRIVALS</span></div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <section class="growstopper">
-        <div class="prop">
-            <div class="prop__item">
-                <div class="prop__card bkg_woman">
-                    <a href="#">
-                        <div class="prop__item__text">
-                            <div class="prop__item__text__uppart">30% off</div>
-                            <div class="prop__item__text__downpart">for women</div>
-                        </div>
+        <nav class="filter-n-sort">
+            <ul class="filter-n-sort__filter">
+                <li class="filter-inner">
+                    <a href="#" class="filter-head">
+                        FILTER
+                        <svg class="filter-icon">
+                            <use xlink:href="#filter-icon" />
+                        </svg>
                     </a>
-                </div>
-            </div>
-            <div class="prop__item">
-                <div class="prop__card bkg_man">
-                    <a href="#">
-                        <div class="prop__item__text">
-                            <div class="prop__item__text__uppart">hot deal</div>
-                            <div class="prop__item__text__downpart">for men</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="prop__item">
-                <div class="prop__card bkg_kid">
-                    <a href="#">
-                        <div class="prop__item__text">
-                            <div class="prop__item__text__uppart">new arrivals</div>
-                            <div class="prop__item__text__downpart">for kids</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="prop__item_longcard">
-                <div class="prop__longcard bkg_categories">
-                    <a href="#">
-                        <div class="prop__item__text">
-                            <div class="prop__item__text__uppart">luxirous & trendy</div>
-                            <div class="prop__item__text__downpart">accesories</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+                    <ul class="filter-menu-list">
+                        <li class="filter-menu-head"><a href="#" class="filter-head">
+                            FILTER
+                            <svg class="filter-icon">
+                                <use xlink:href="#filter-icon" />
+                            </svg>
+                        </a></li>
+                        <li class="filter-menu-elem">
+                            <details>
+                                <summary class="filter-menu-elem-summary">category</summary>
+                                <ul class="category-menu">
+                                    <li class="category-menu-elem">
+                                        <a href="#" class="category-menu-link">Accessories</a>
+                                    </li>
+                                    <li class="category-menu-elem">
+                                        <a href="#" class="category-menu-link">Bags</a>
+                                    </li>
+                                    <li class="category-menu-elem">
+                                        <a href="#" class="category-menu-link">Denim</a>
+                                    </li>
+                                    <li class="category-menu-elem">
+                                        <a href="#" class="category-menu-link">Hoodies & Sweatshirts</a>
+                                    </li>
+                                    <li class="category-menu-elem">
+                                        <a href="#" class="category-menu-link">Jackets & Coats</a>
+                                    </li>
+                                    <li class="category-menu-elem">
+                                        <a href="#" class="category-menu-link">Polos</a>
+                                    </li>
+                                    <li class="category-menu-elem">
+                                        <a href="#" class="category-menu-link">Shirts</a>
+                                    </li>
+                                    <li class="category-menu-elem">
+                                        <a href="#" class="category-menu-link">Shoes</a>
+                                    </li>
+                                    <li class="category-menu-elem">
+                                        <a href="#" class="category-menu-link">Sweaters & Knits</a>
+                                    </li>
+                                    <li class="category-menu-elem">
+                                        <a href="#" class="category-menu-link">T-Shirts</a>
+                                    </li>
+                                    <li class="category-menu-elem">
+                                        <a href="#" class="category-menu-link">Tanks</a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li class="filter-menu-elem">
+                            <details>
+                                <summary class="filter-menu-elem-summary">brand</summary>
+                                <ul class="category-menu">
+                                    <li class="category-menu-elem"><a href="#" class="category-menu-link">brand</a></li>
+                                    <li class="category-menu-elem"><a href="#" class="category-menu-link">brand</a></li>
+                                    <li class="category-menu-elem"><a href="#" class="category-menu-link">brand</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li class="filter-menu-elem">
+                            <details>
+                                <summary class="filter-menu-elem-summary">designer</summary>
+                                <ul class="category-menu">
+                                    <li class="category-menu-elem"><a href="#" class="category-menu-link">designer</a></li>
+                                    <li class="category-menu-elem"><a href="#" class="category-menu-link">designer</a></li>
+                                    <li class="category-menu-elem"><a href="#" class="category-menu-link">designer</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="filter-n-sort__sort">
+                <li class="sort-btn">TRENDING NOW
+                    <img src="img/down-arrow-icon.svg" alt="down-arrow" class="sort-details-arrow">
+                </li>
+                <li class="sort-btn">
+                    <div>
+                        SIZE
+                        <img src="img/down-arrow-icon.svg" alt="down-arrow" class="sort-details-arrow">
+                    </div>
+                    <ul class="size-menu">
+                        <li class="size-menu-elem">
+                            <input id="xs" type="checkbox" class="checkbox"><label for="xs" class="check-label">XS</label>
+                        </li>
+                        <li class="size-menu-elem">
+                            <input id="s" type="checkbox" class="checkbox"><label for="s" class="check-label">S</label>
+                        </li>
+                        <li class="size-menu-elem">
+                            <input id="m" type="checkbox" class="checkbox"><label for="m" class="check-label">M</label>
+                        </li>
+                        <li class="size-menu-elem">
+                            <input id="L" type="checkbox" class="checkbox"><label for="L" class="check-label">L</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sort-btn">PRICE
+                    <img src="img/down-arrow-icon.svg" alt="down-arrow" class="sort-details-arrow">
+                </li>
+            </ul>
+        </nav>
     </section>
 
     <section class="growstopper">
-        <div class="featured-items-header">
-            <h2 class="featured-items-header__header">Fetured Items</h2>
-            <p class="featured-items-header__text">Shop for items based on what we featured in this week</p>
-        </div>
         <div class="featured-items">
             <div class="card-block">
                 <a href="#" class="card">
@@ -145,9 +211,10 @@
                     </a>
                 </div>
             </div>
+
             <div class="card-block">
                 <a href="#" class="card">
-                    <img src="img/pic2.jpeg" alt="pic2" class="card-pic">
+                    <img src="img/pic11.jpeg" alt="pic11" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
                         <p class="card-text">
@@ -163,6 +230,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="card-block">
                 <a href="#" class="card">
                     <img src="img/pic3.jpeg" alt="pic3" class="card-pic">
@@ -181,6 +249,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="card-block">
                 <a href="#" class="card">
                     <img src="img/pic4.jpeg" alt="pic4" class="card-pic">
@@ -199,9 +268,10 @@
                     </a>
                 </div>
             </div>
+
             <div class="card-block">
                 <a href="#" class="card">
-                    <img src="img/pic5.jpeg" alt="pic5" class="card-pic">
+                    <img src="img/pic10.jpeg" alt="pic10" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
                         <p class="card-text">
@@ -217,9 +287,67 @@
                     </a>
                 </div>
             </div>
+
             <div class="card-block">
                 <a href="#" class="card">
-                    <img src="img/pic6.jpeg" alt="pic6" class="card-pic">
+                    <img src="img/pic8.jpeg" alt="pic8" class="card-pic">
+                    <div class="text-box">
+                        <p class="card-header">ELLERY X M'O CAPSULE</p>
+                        <p class="card-text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                        </p>
+                        <p class="card-price">$52.00</p>
+                    </div>
+                </a>
+                <div class="add-box">
+                    <a href="#" class="add">
+                        <img src="img/cart.svg" alt="chart">
+                        <p class="add-text">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-block">
+                <a href="#" class="card">
+                    <img src="img/pic12.jpeg" alt="pic12" class="card-pic">
+                    <div class="text-box">
+                        <p class="card-header">ELLERY X M'O CAPSULE</p>
+                        <p class="card-text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                        </p>
+                        <p class="card-price">$52.00</p>
+                    </div>
+                </a>
+                <div class="add-box">
+                    <a href="#" class="add">
+                        <img src="img/cart.svg" alt="chart">
+                        <p class="add-text">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-block">
+                <a href="#" class="card">
+                    <img src="img/pic9.jpeg" alt="pic9" class="card-pic">
+                    <div class="text-box">
+                        <p class="card-header">ELLERY X M'O CAPSULE</p>
+                        <p class="card-text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                        </p>
+                        <p class="card-price">$52.00</p>
+                    </div>
+                </a>
+                <div class="add-box">
+                    <a href="#" class="add">
+                        <img src="img/cart.svg" alt="chart">
+                        <p class="add-text">Add to Cart</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-block">
+                <a href="#" class="card">
+                    <img src="img/pic7.jpeg" alt="pic7" class="card-pic">
                     <div class="text-box">
                         <p class="card-header">ELLERY X M'O CAPSULE</p>
                         <p class="card-text">
@@ -236,11 +364,27 @@
                 </div>
             </div>
         </div>
-        <div class="browse-button">
-            <a href="catalog.html">
-                <div class="browse-btn">Browse All Product</div>
-            </a>
-        </div>
+    </section>
+
+    <section class="pagination">
+        <ul class="pagination-btns">
+            <li class="arrow">
+                <a href="#" class="pagination-link">
+                    <img src="img/catalog-left-arrow.svg" alt="" class="left-arrow">
+                </a>
+            </li>
+            <li class="page active-page"><a href="#" class="pagination-link">1</a></li>
+            <li class="page"><a href="#" class="pagination-link">2</a></li>
+            <li class="page"><a href="#" class="pagination-link">3</a></li>
+            <li class="page"><a href="#" class="pagination-link">4</a></li>
+            <li class="page"><a href="#" class="pagination-link">5</a></li>
+            <li class="page"><a href="#" class="pagination-link">6.....20</a></li>
+            <li class="arrow">
+                <a href="#" class="pagination-link">
+                    <img src="img/catalog-left-arrow.svg" alt="" class="right-arrow">
+                </a>
+            </li>
+        </ul>
     </section>
 
     <footer>

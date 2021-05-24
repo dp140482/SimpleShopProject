@@ -62,23 +62,20 @@
     }
     .prop {
         margin-top: 60px;
-        margin-bottom: 90px;
+        margin-bottom: 97px;
         padding: 0;
-    }
-    .prop__item_longcard {
-        margin: 28px 8px 8px;
     }
     .featured-items-header {
         margin-bottom: 28px;
     }
     .featured-items {
-        margin-top: 28px;
+        margin-top: 52px;
+        justify-content: space-between;
     }
     .featured-items__card {
         margin-top: 23px;
     }
     .browse-button {
-        margin-top: 17px;
         margin-bottom: 93px;
     }
     .upfooter {
@@ -100,5 +97,48 @@
     }
     .downfooter {
         padding: 0;
+    }
+    .prop__item {
+        width: 31.5%;
+        margin: 10px 0 -10px;
+    }
+    .prop__item_longcard {
+        margin: 40px 0 0;
+    }
+    .menu-block {
+        position: relative;
+    }
+    .menu {
+        font-size: 14px;
+        line-height: 17px;
+        display: none;
+        z-index: 1;
+    }
+    .menu-block:hover .menu {
+        display: block;
+        background: white;
+        position: absolute;
+        width: 232px;
+        height: 764px;
+        padding: 33px;
+    }
+    .submenu {
+        padding: 22px;
+    }
+    .menu-main-header {
+        text-transform: uppercase;
+        padding: 12px 0;
+    }
+    .menu-header {
+        text-transform: uppercase;
+        color: #F16D7F;
+        margin: 12px 0;
+    }
+    .menu-elem {
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #6f6e6e;
+        display: block;
+        margin-top: 11px;
     }
 }

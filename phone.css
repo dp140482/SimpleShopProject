@@ -199,48 +199,32 @@
     margin: 53px 0 0;
 }
 
-.featured-items__card {
-    background: #F8F8F8;
-    width: 359px;
-    margin: 7.5px 0;
+.card-block {
+    position: relative;
+    margin-bottom: 33px;
 }
 
-.featured-items__card:hover {
+.card {
+    display: block;
+    text-decoration: none;
+    background: #F8F8F8;
+    width: 359px;
+}
+
+.card-block:hover {
     box-shadow: 0 0 15px gray;
 }
 
-.featured-items__card:hover .add-to-cart {
-    display: flex;
-    align-items: center;
+.card-block:hover .card-pic {
+    filter: brightness(50%);
 }
 
-.featured-items__card:hover .card__pic {
-    filter: brightness(0.30);
-}
-
-.add-to-cart {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    text-decoration: none;
-    padding: 13px;
-    border: 1px solid white;
-}
-
-.add-to-cart__text {
-    color: white;
-    margin-left: 11px;
-}
-
-.add-to-cart:hover {
-    box-shadow: 0 0 15px white;
+.text-box {
+    padding: 23px 29px 18px 17px;
 }
 
 .card-header {
-    align-self: flex-start;
-    margin: 23px 29px 13px 17px;
+    margin-bottom: 13px;
     font-size: 13px;
     line-height: 16px;
     letter-spacing: 0.03px;
@@ -248,8 +232,7 @@
 }
 
 .card-text {
-    align-self: flex-start;
-    margin: 12px 29px 12px 17px;
+    margin-bottom: 12px;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -258,12 +241,38 @@
 }
 
 .card-price {
-    align-self: flex-start;
-    margin: 18px;
-    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
+}
+
+.add-box {
+    display: none;
+}
+
+.add-box:hover .add {
+    box-shadow: 0 0 15px white;
+}
+
+.card-block:hover .add-box {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.add-text {
+    color: white;
+    margin-left: 11px;
 }
 
 .browse-button {
