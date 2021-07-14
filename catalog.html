@@ -30,9 +30,9 @@
                     <div class="rightpart">
                         <img src="img/menu-btn-pic.svg " alt="menu-btn-pic" class="desktop_mod scalable" onclick="openMenu()">
                         <a href="registration.html"><img src="img/people.svg " alt="people" class="no-phone no-phone_pic desktop_mod scalable"></a>
-                        <a href="cart.html" class="cart scalable">
+                        <a href="cart.html" class="cart scalable" id = "cartBtn">
                             <img src="img/cart.svg " alt="cart" class="no-phone no-phone_pic">
-                            <div class="goods no-phone">5</div>
+                            <div class="goods no-phone" id="goodsInCart">5</div>
                         </a>
                     </div>
                 </div>
@@ -467,6 +467,32 @@
             document.getElementById("sizeMenuHead").style.visibility = "hidden";
             document.getElementById("sizeBtn").onclick = openSizeMenu;
         }
+
+        // Задание к уроку 8 базового курса JavaScript:
+
+        function onAddButtonClick() {
+            goodsNum++;
+            goodsNumElem.innerText = goodsNum;
+        }
+
+        let addBtns = document.querySelectorAll("a.add");
+        let goodsNumElem = document.getElementById("goodsInCart");
+        let cart = document.getElementById("a.cartBtn");
+
+        // Инициализация индикатора числа товаров в корзине
+        let goodsNum = 0;
+        goodsNumElem.innerText = goodsNum;
+
+        for (let addBtn of addBtns) {
+            // Установка обработчика события клика по кнопке "Add to Cart"
+            addBtn.addEventListener("click", onAddButtonClick);
+            // Удаление ссылки на страницу cart.html
+            addBtn.href = "#";
+        }
+
+
+
+        console.log(addBtns);
     </script>
 </body>
 
