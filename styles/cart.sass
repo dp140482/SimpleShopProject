@@ -1,0 +1,24 @@
+@import "init"
+@import "top-header"
+@import "breadcrumbs"
+@import "cart-block"
+@import "middle-footer"
+@import "downfooter"
+
+@media (min-width: 768px)
+    @import "top-header-tablet"
+    @import "breadcrumbs-tablet"
+    @import "cart-block-tablet"
+    @import "middle-footer-tablet"
+    @import "downfooter-tablet"
+
+@media (min-width: 1140px)
+    @import "init-desktop"
+    @import "top-header-desktop"
+    @import "breadcrumbs-desktop"
+    @import "cart-block-desktop"
+    @import "middle-footer-desktop"
+    @import "downfooter-desktop"
+
+@media (max-width: 400px)
+    @import "cart-block-smallphone"

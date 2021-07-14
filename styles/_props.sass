@@ -1,0 +1,65 @@
+.prop
+    display: flex
+    align-items: center
+    flex-direction: column
+    margin: 45px 0
+    &-item
+        position: relative
+        margin: 16px 15px
+        width: 92%
+        &-text
+            position: absolute
+            left: 50%
+            top: 50%
+            height: 100%
+            width: 100%
+            transform: translate(-50%, -50%)
+            background: rgba(33, 22, 22, 0.7)
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
+            text-transform: uppercase
+            &-uppart
+                font-size: 16px
+                line-height: 19px
+                color: white
+            &-downpart
+                font-size: 24px
+                line-height: 25px
+                color: #F16D7F
+                font-weight: bold
+    &-card
+        min-width: 343px
+        min-height: 247px
+        aspect-ratio: 343 / 247
+        background-size: cover
+        &:hover .prop-item-text
+            background: none
+        &:hover .prop-item-text-uppart
+            background: rgba(33, 22, 22, 0.7)
+        &:hover .prop-item-text-downpart
+            background: rgba(33, 22, 22, 0.7)
+    &-longcard
+        min-width: 343px
+        min-height: 111px
+        aspect-ratio: 343 / 111
+        background-size: cover
+        &:hover .prop-item-text
+            background: none
+        &:hover .prop-item-text-uppart
+            background: rgba(33, 22, 22, 0.7)
+        &:hover .prop-item-text-downpart
+            background: rgba(33, 22, 22, 0.7)
+
+.bkg-woman
+    background-image: url('../img/woman.jpeg')
+
+.bkg-man
+    background-image: url('../img/man.jpeg')
+
+.bkg-kid
+    background-image: url('../img/kid.jpeg')
+
+.bkg-categories
+    background-image: url('../img/categories.jpeg')

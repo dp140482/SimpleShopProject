@@ -1,0 +1,150 @@
+$filter-red: #EF5B70
+
+.filter-menu
+    position: relative
+    &-box
+        width: 360px
+        margin-right: 30px
+        &-content
+            position: absolute
+            z-index: 1
+            top: -13px
+            background-color: #FFFFFF
+            display: flex
+            flex-direction: column
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+            padding: 13px 16px 16px
+            width: 100%
+            box-sizing: border-box
+            visibility: hidden
+    &-heading
+        font-weight: 600
+        margin-right: 11px
+        cursor: pointer
+    &-link
+        color: #6F6E6E
+        margin-bottom: 11px
+        margin-left: 18px
+        &:hover
+            color: $filter-red
+
+.filter-box
+    display: flex
+    position: relative
+    &-heading
+        list-style-type: none
+        display: flex
+        outline: none
+        cursor: pointer
+
+.main-text
+    font-size: 14px
+    line-height: 17px
+
+.filter-heading
+    font-weight: 600
+    color: #000000
+    margin-right: 11px
+    margin-left: 16px
+
+.pic-link
+    display: block
+    text-decoration: none
+
+.pink-text
+    color: $filter-red
+
+.catalog-link-box
+    display: flex
+
+.filter-section
+    padding: 11px 0 11px 11px
+    border-bottom: 1px solid #EBEBEB
+    border-left: 5px solid $filter-red
+    margin-top: 16px
+    width: 100%
+    list-style-type: none
+
+.filter-padding
+    padding-top: 25px
+
+.filter-icon
+    width: 15px
+    height: 10px
+    margin: 0 11px
+    fill: black
+    &-pink
+        @extend .filter-icon
+        fill: $filter-red
+
+.filter-n-sort
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 718px
+    font-size: 14px
+    height: 112px
+    &-sort
+        display: flex
+        color: #6F6E6E
+        list-style-type: none
+
+.filterMenu-off
+    display: none
+
+.filterMenu-on
+    display: flex
+
+.sort-details-arrow
+    margin-left: 11px
+
+.size-btn-container
+    position: relative
+
+.sort-btn
+    margin-right: 26px
+    display: flex
+    cursor: pointer
+
+.category-menu
+    display: none
+    padding: 1px 17px
+    margin-bottom: -5px
+    list-style-type: none
+    text-transform: capitalize
+    transition: 0.5s
+    &-elem
+        margin: 11px 0
+    &-link
+        text-decoration: none
+        color: inherit
+
+.size-menu
+    display: block
+    list-style-type: none
+    font-size: 14px
+    line-height: 21px
+    font-weight: 400
+    color: #6f6e6e
+    background: white
+    padding: 1px 10px 10px
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    position: absolute
+    top: 25px
+    left: -7px
+    z-index: 1
+    width: 79px
+    visibility: hidden
+    &-elem
+        display: flex
+        &:hover
+            color: $filter-red
+
+.checkbox
+    width: 12px
+    height: 12px
+    margin: 5px
+    border: 1px solid #ebebeb
+
+.check-label
+    width: 100%

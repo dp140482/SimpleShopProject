@@ -7,12 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Brand – Product</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
-    <link rel="stylesheet" href="phone.css">
-    <link rel="stylesheet" href="tablet.css">
-    <link rel="stylesheet" href="desktop.css">
-    <link rel="stylesheet" href="catalog.css">
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="styles/product.css">
+    <script src="https://kit.fontawesome.com/a067714524.js" crossorigin="anonymous"></script>
+</head>
 
+<body>
     <svg width="33" height="29" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="cart-icon" viewBox="0 0 33 29">
             <title>cart-icon</title>
@@ -20,21 +19,18 @@
         </symbol>
     </svg>
 
-</head>
-
-<body>
     <header>
         <nav class="top-bkg">
             <div class="growstopper">
                 <div class="top-menu">
                     <div class="leftpart">
-                        <a href="index.html"><img src="img/logo.png" alt="logo" class="logopic"></a>
-                        <img src="img/mglass.svg " alt="mglass" class="mgpic">
+                        <a href="index.html"><img src="img/logo.png" alt="logo" class="logopic scalable"></a>
+                        <img src="img/mglass.svg " alt="mglass" class="mgpic scalable">
                     </div>
                     <div class="rightpart">
-                        <img src="img/menu-btn-pic.svg " alt="menu-btn-pic" class="desktop_mod" onclick="openMenu()">
-                        <a href="registration.html"><img src="img/people.svg " alt="people" class="no-phone no-phone_pic desktop_mod"></a>
-                        <a href="cart.html" class="cart">
+                        <img src="img/menu-btn-pic.svg " alt="menu-btn-pic" class="desktop_mod scalable" onclick="openMenu()">
+                        <a href="registration.html"><img src="img/people.svg " alt="people" class="no-phone no-phone_pic desktop_mod scalable"></a>
+                        <a href="cart.html" class="cart scalable">
                             <img src="img/cart.svg " alt="cart" class="no-phone no-phone_pic">
                             <div class="goods no-phone">5</div>
                         </a>
@@ -44,9 +40,15 @@
         </nav>
         <nav class="breadcrumb-bkg menu-anchor">
             <div class="growstopper">
-                <div class="breadcrumb">
-                    <div class="breadcrumb-leftpart">NEW ARRIVALS</div>
-                    <div class="breadcrumb-rightpart">HOME / MEN / <span class="breadcrumb-current">NEW ARRIVALS</span></div>
+                <div class="breadcrumb-content">
+                    <div class="breadcrumb">
+                        <div class="breadcrumb-leftpart">NEW ARRIVALS</div>
+                        <div class="breadcrumb-rightpart">
+                            <a href="index.html" class="breadcrumb-link">HOME</a> /
+                            <a href="catalog.html" class="breadcrumb-link">MEN</a> /
+                            <a href="catalog.html" class="breadcrumb-current">NEW ARRIVALS</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <nav class="menu-off" id="mainMenu">
@@ -82,11 +84,11 @@
         </nav>
     </header>
 
-    <section class="slideshow">
+    <div class="slideshow">
         <a href="#" class="slideshow-arrow"><img src="img/catalog-left-arrow.svg" alt="left arrow" class="left-arrow"></a>
         <img src="img/bigpic13.jpeg" alt="" class="slide">
         <a href="#" class="slideshow-arrow"><img src="img/catalog-left-arrow.svg" alt="" class="right-arrow"></a>
-    </section>
+    </div>
 
     <div class="container-for-floats">
         <section class="growstopper gs-floater">
@@ -102,7 +104,7 @@
                     $561
                 </p>
                 <hr class="dc-under-price">
-                <ul class="filter-n-sort__sort">
+                <ul class="filter-n-sort-sort">
                     <li class="sort-btn"><a href="#" class="transparent-href">CHOOSE COLOR
                     <img src="img/down-arrow-icon.svg" alt="down-arrow" class="sort-details-arrow"></a>
                     </li>
@@ -124,7 +126,7 @@
             </div>
         </section>
 
-        <section class="growstopper">
+        <div class="growstopper">
             <div class="featured-items">
 
                 <div class="card-block">
@@ -184,23 +186,23 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
     <footer>
         <div class="midfootersec_bkg">
             <div class="megastopper">
-                <div class="midfooter_container">
+                <div class="midfooter-container">
                     <div class="midfooter growstopper">
-                        <figure class="midfooter__topcontainer">
-                            <img src="img/footerphoto.png" alt="footerphoto" class="midfooter__img">
-                            <figcaption class="midfooter__subpictext">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <em>a pulvinar purus condimentum</em>“</figcaption>
+                        <figure class="midfooter-topcontainer">
+                            <img src="img/footerphoto.png" alt="footerphoto" class="midfooter-img">
+                            <figcaption class="midfooter-subpictext">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <em>a pulvinar purus condimentum</em>“</figcaption>
                         </figure>
-                        <form action="#" class="midfooter__form">
-                            <div class="form__header">subscribe</div>
-                            <div class="form__subheader">for our newletter and promotion</div>
-                            <input type="email" class="form__input" placeholder="Enter Your Email">
-                            <input type="submit" value="Subscribe" class="form__subscribe">
+                        <form action="#" class="midfooter-form">
+                            <div class="form-header">subscribe</div>
+                            <div class="form-subheader">for our newletter and promotion</div>
+                            <input type="email" class="form-input" placeholder="Enter Your Email">
+                            <input type="submit" value="Subscribe" class="form-subscribe">
                         </form>
                     </div>
                 </div>
@@ -211,23 +213,23 @@
                 <div class="downfooter">
                     <div class="socials">
                         <a href="https://www.facebook.com">
-                            <div class="socials__item">
-                                <img src="img/facebook.svg" alt="facebook">
+                            <div class="social-item">
+                                <i class="fab fa-facebook-f icon_pic"></i>
                             </div>
                         </a>
                         <a href="https://www.instagram.com">
-                            <div class="socials__item">
-                                <img src="img/instagram.svg" alt="instagram">
+                            <div class="social-item">
+                                <i class="fab fa-instagram icon_pic"></i>
                             </div>
                         </a>
                         <a href="https://www.pinterest.ru">
-                            <div class="socials__item">
-                                <img src="img/pinterest.svg" alt="snP">
+                            <div class="social-item">
+                                <i class="fab fa-pinterest-p icon_pic"></i>
                             </div>
                         </a>
                         <a href="https://twitter.com">
-                            <div class="socials__item">
-                                <img src="img/twitter.svg" alt="twitter">
+                            <div class="social-item">
+                                <i class="fab fa-twitter icon_pic"></i>
                             </div>
                         </a>
                     </div>

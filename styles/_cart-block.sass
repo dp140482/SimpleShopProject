@@ -1,0 +1,192 @@
+$cart-red: #F16D7F
+
+@function tovw($size)
+    @return $size / 3.75px * 1vw
+
+@keyframes text-pop-up-top
+    0%
+        transform: translateY(0)
+        transform-origin: 50% 50%
+        text-shadow: none
+    100%
+        transform: translateY(-50px)
+        transform-origin: 50% 50%
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3)
+
+.cartblock-content
+    margin: 0 2.3%
+
+.cartblock
+    display: flex
+    flex-direction: column
+    margin: 39px 0 96px
+
+.cardbox
+    display: flex
+    flex-direction: column
+    align-items: center
+    &-buttons
+        display: flex
+        justify-content: space-between
+        margin-top: 14px
+        width: 100%
+    &-btn
+        display: block
+        text-decoration: none
+        border: 1px solid #A4A4A4
+        color: #575757
+        background: white
+        font-size: tovw(12px)
+        line-height: tovw(14px)
+        padding: 9px 9%
+        &:hover
+            color: white
+            background: #A4A4A4
+
+.quote-btn
+    @extend .cardbox-btn
+    padding: 11px 15px
+    color: #4A4A4A
+    font-weight: 300
+    font-size: tovw(11px)
+    line-height: tovw(13px)
+    cursor: pointer
+
+.cardbox-card
+    position: relative
+    display: flex
+    margin: 16px 0
+    width: 100%
+    background: white
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+
+.card-picture
+    height: tovw(188px)
+    display: block
+
+.textbox
+    margin: 13.5px 17px 0
+
+.card-header
+    font-size: tovw(16px)
+    line-height: tovw(19px)
+    margin-bottom: tovw(25.85px)
+    color: #222222
+
+.card-data
+    font-size: tovw(14px)
+    line-height: tovw(17px)
+    color: #575757
+
+.product-count-input
+    margin-left: tovw(20px)
+    width: tovw(24px)
+    border: 1px solid #EAEAEA
+    color: #656565
+    font-size: tovw(10px)
+    line-height: tovw(12px)
+    text-align: center
+    &:active, &:focus
+        outline: 1px solid darken(#EAEAEA, 50%)
+
+.card-close
+    position: absolute
+    top: tovw(17.2px)
+    right: tovw(12.08px)
+    &-img
+        height: tovw(9.88px)
+        width: tovw(11.06px)
+        &:hover
+            transform: scale(1.4)
+
+.price-span
+    color: $cart-red
+
+.formbox
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin-top: 48px
+
+.address-form
+    display: flex
+    flex-direction: column
+    width: 100%
+    &-header
+        font-weight: 300
+        font-size: tovw(16px)
+        line-height: tovw(19px)
+        color: #222222
+        margin: 16px 0 tovw(10.5px)
+    &-button
+        display: flex
+        justify-content: flex-start
+        margin: 10px 0 57.5px
+
+.address-input
+    margin: tovw(10px) 0
+    padding: tovw(13px) tovw(17px) tovw(15px)
+    font-size: tovw(13px)
+    line-height: tovw(16px)
+    color: #222222
+    border: 1px solid #A4A4A4
+
+.address-country
+    font-weight: 300
+    color: #B1B1B1
+
+.proceedblock
+    padding: tovw(39px) tovw(43px) tovw(42px) tovw(44px)
+    background: #F5F3F3
+
+.subtotalp
+    color: #4A4A4A
+    font-size: tovw(11px)
+    line-height: tovw(13px)
+    text-align: right
+    margin-right: -8px
+
+.grandtotalp
+    color: #222222
+    font-weight: 300
+    font-size: tovw(16px)
+    line-height: tovw(19px)
+    text-align: right
+    margin: 12px -5px 21px 0
+
+.subtotalsum
+    margin-left: tovw(22px)
+
+.totalsum
+    color: $cart-red
+    margin-left: tovw(21px)
+    font-weight: 700
+    &:hover
+        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+.line
+    display: flex
+    justify-content: center
+    max-width: 90%
+    border-top: 1px solid #E2E2E2
+
+.proceedbutton
+    display: block
+    text-decoration: none
+    color: white
+    background: $cart-red
+    padding: 15px tovw(15px)
+    width: 273px
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    border: 1px solid $cart-red
+    margin-top: 17px
+    text-transform: uppercase
+    text-align: center
+    &:hover
+        background: white
+        color: $cart-red
+
+.prod-link
+    display: block
