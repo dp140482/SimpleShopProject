@@ -30,9 +30,20 @@
                     <div class="rightpart">
                         <img src="img/menu-btn-pic.svg " alt="menu-btn-pic" class="desktop_mod scalable" onclick="openMenu()">
                         <a href="registration.html"><img src="img/people.svg " alt="people" class="no-phone no-phone_pic desktop_mod scalable"></a>
-                        <a href="cart.html" class="cart scalable">
-                            <img src="img/cart.svg " alt="cart" class="no-phone no-phone_pic">
-                            <div class="goods no-phone">5</div>
+                        <a href="#" class="cart scalable" id="cartBtn">
+                            <img src="img/cart.svg" alt="cart" class="no-phone no-phone_pic">
+                            <div class="goods no-phone" id="goodsInCart">5</div>
+                            <div class="modal-window">
+                                <table class="modal-window-table">
+                                    <tr>
+                                        <th>Товар</th>
+                                        <th>Кол-во</th>
+                                        <th>Цена</th>
+                                        <th>Итого</th>
+                                    </tr>
+                                </table>
+                                <p class="modal-window-sum">Товаров в корзине на сумму: <span></span></p>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -441,33 +452,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        function openMenu() {
-            document.getElementById("mainMenu ").className = "menu-on ";
-        }
-
-        function closeMenu() {
-            document.getElementById("mainMenu ").className = "menu-off ";
-        }
-
-        function closeFilterMenu() {
-            document.getElementById("filterMenuHead").style.visibility = "hidden";
-        }
-
-        function openFilterMenu() {
-            document.getElementById("filterMenuHead").style.visibility = "visible";
-        }
-
-        function openSizeMenu() {
-            document.getElementById("sizeMenuHead").style.visibility = "visible";
-            document.getElementById("sizeBtn").onclick = closeSizeMenu;
-        }
-
-        function closeSizeMenu() {
-            document.getElementById("sizeMenuHead").style.visibility = "hidden";
-            document.getElementById("sizeBtn").onclick = openSizeMenu;
-        }
-    </script>
+    <script src="scripts/catalog-functional.js"></script>
+    <script src="scripts/catalog-cart.js"></script>
 </body>
 
 </html>
